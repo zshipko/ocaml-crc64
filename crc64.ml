@@ -162,6 +162,9 @@ module Uint8 = struct
         to_int a lxor to_int b
 end
 
+let unsigned_string =
+    Printf.sprintf "%+016Lx"
+
 let crc64 ?crc:(crc=0L) (s : string) : int64 =
     let len = String.length s in
     let dst = ref  crc in
@@ -173,5 +176,5 @@ let crc64 ?crc:(crc=0L) (s : string) : int64 =
     done; !dst
 
 let crc64_s ?crc (s : string) : string =
-    crc64 ?crc s |> Printf.sprintf "%+016Lx"
+    crc64 ?crc s |> unsigned_string
 

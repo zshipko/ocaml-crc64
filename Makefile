@@ -3,7 +3,7 @@ lib:
 
 install:
 	$(MAKE) uninstall || :
-	cd _build && ocamlfind install crc64 ../META crc64.a crc64.cma crc64.cmxa crc64.cmx
+	cd _build && ocamlfind install crc64 ../META crc64.a crc64.cma crc64.cmxa crc64.cmx crc64.mli
 
 uninstall:
 	ocamlfind remove crc64
