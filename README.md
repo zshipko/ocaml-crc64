@@ -3,8 +3,7 @@ This is a pure OCaml implementation of Redis' CRC64
 
 # Building
 
-    make
-    make install
+    opam pin add crc64 .
 
 # Usage
 This module exports the following functions:

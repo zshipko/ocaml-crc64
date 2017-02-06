@@ -1,12 +1,9 @@
+.PHONY: lib
 lib:
-	ocamlbuild crc64.cma crc64.cmxa
-
-install:
-	$(MAKE) uninstall || :
-	cd _build && ocamlfind install crc64 ../META crc64.a crc64.cma crc64.cmxa crc64.cmx crc64.mli
+	./pkg/pkg.ml build
 
 uninstall:
-	ocamlfind remove crc64
+	opam remove merz
 
 .PHONY: doc
 doc:
