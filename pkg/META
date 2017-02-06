@@ -1,6 +1,6 @@
 name="crc64"
 description="CRC64 ported from the Redis C implementation"
-version="0.1"
+version="1.0"
 requires="bigarray"
 archive(native)="crc64.cmxa"
 archive(byte)="crc64.cma"
