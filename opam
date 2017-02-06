@@ -1,0 +1,20 @@
+opam-version: "1.2"
+version: "0.1"
+maintainer: "Zach Shipko <zachshipko@gmail.com>"
+authors: ["Zach Shipko"]
+license: "MIT"
+homepage: "https://github.com/zshipko/ocaml-crc64"
+bug-reports: "https://github.com/zshipko/ocaml-crc64/issues"
+dev-repo: "https://github.com/zshipko/ocaml-crc64.git"
+doc: "https://github.com/zshipko/ocaml-crc64"
+
+depends: [
+    "ocamlfind" {build}
+    "ocamlbuild" {build}
+    "topkg" {build}
+]
+
+build: [[
+    "ocaml" "./pkg/pkg.ml" "build"
+        "--pinned" "%{pinned}%"
+]]

@@ -13,5 +13,5 @@ This module exports the following functions:
 - `crc64_s`
 - `unsigned_string`
 
-See crc64.mli for more details
+See 'lib/crc64.mli' for more details
 
